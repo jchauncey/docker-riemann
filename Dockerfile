@@ -14,6 +14,6 @@ ADD riemann.config /etc/riemann/riemann.config
 
 ## 5555 - Riemann TCP and UDP
 ## 5556 - Riemann WS
-EXPOSE 5555 5555/udp 5556
+EXPOSE 7777 7776/udp 5556
 
 CMD "./riemann-$RIENMANN_VERSION/bin/riemann"
