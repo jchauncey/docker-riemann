@@ -18,4 +18,5 @@ ADD riemann.config riemann.config
 ## 5556 - Riemann WS
 EXPOSE 5555 5555/udp 5556
 
-CMD "./riemann-$RIENMANN_VERSION/bin/riemann /home/riemann/riemann.config"
+ENTRYPOINT ["./riemann-$RIENMANN_VERSION/bin/riemann"]
+CMD ["/home/riemann/riemann.config"]
